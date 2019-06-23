@@ -1,0 +1,33 @@
+{
+    "name": "monochrome web",
+    "description": "a small app that when enabled converts all text to either black or white to maximize contrast",
+    "version": "0.1",
+    "permissions": [
+        "activeTab",
+        "storage"
+    ],
+    "background": {
+        "scripts": [ "background.js" ],
+        "persistent": false
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "all_frames": true,
+            "js": ["content.js"],
+            "run_at": "document_end"
+        }
+    ],
+    "browser_action": {
+    },
+    "icons": {
+        "16": "images/icon16.png",
+        "32": "images/icon32.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+    },
+    "manifest_version": 2
+}
