@@ -80,7 +80,6 @@ chrome.storage.local.get(['is_active'], function(result) {
         var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
         var node;
         while (node = walker.nextNode()) {
-            console.log(node.wholeText);
             make_monochrome(node);
         }
 

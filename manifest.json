@@ -1,6 +1,6 @@
 {
     "name": "monochrome web",
-    "description": "a small app that when enabled converts all text to either black or white to maximize contrast",
+    "description": "a small extension that when enabled converts all text to either black or white to maximize contrast",
     "version": "0.1",
     "permissions": [
         "activeTab",
